@@ -81,8 +81,7 @@ styles.
 
 Start by tabbing through your site. Ideally the order in which elements are
 focused should follow the DOM order. If you’re unsure which elements should
-receive focus,see [Focus
-Fundamentals](https://developers.google.com/web/fundamentals/accessibility/focus/)
+receive focus,see [Focus Fundamentals](/web/fundamentals/accessibility/focus/)
 for a refresher. The general rule of thumb is that any control a user can
 interact with or provide input to should be focusable and should display a focus
 indicator (e.g., a focus ring).
@@ -112,7 +111,7 @@ indicator (e.g., a focus ring).
 - If new content is added to the page, make sure that the user’s focus is
   directed to that content so they can take action on it. See [Managing Focus at
   the Page
-  Level](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex#managing_focus_at_the_page_level)
+  Level](/web/fundamentals/accessibility/focus/using-tabindex#managing_focus_at_the_page_level)
   for examples.
 
 - At no point should focus get trapped. Watch out for autocomplete widgets,
@@ -120,13 +119,13 @@ indicator (e.g., a focus ring).
   in specific situations, such as displaying a modal, when you don't want the
   user interacting with the rest of the page. See the guide on [Modals and
   Keyboard
-  Traps](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex#modals_and_keyboard_traps)
+  Traps](/web/fundamentals/accessibility/focus/using-tabindex#modals_and_keyboard_traps)
   for an example.
 
 ### Just because something is focusable doesn’t mean it’s usable
 If you’ve built a custom control then a user should be able to reach _all_ of
 its functionality using only the keyboard. See [Managing Focus In
-Components](https://developers.google.com/web/fundamentals/accessibility/focus/using-tabindex#managing_focus_in_components)
+Components](/web/fundamentals/accessibility/focus/using-tabindex#managing_focus_in_components)
 for techniques on ensuring good keyboard access.
 
 ### Don’t forget offscreen content
@@ -136,7 +135,7 @@ window that has yet to be displayed. Leaving these elements in the DOM can lead
 to a confusing keyboarding experience, especially for screen readers which will
 announce the offscreen content as if it’s part of the page. See [Handling
 Offscreen
-Content](https://developers.google.com/web/fundamentals/accessibility/focus/dom-order-matters#offscreen_content)
+Content](/web/fundamentals/accessibility/focus/dom-order-matters#offscreen_content)
 for tips on how to deal with these elements.
 
 ## Try it with a screen reader
@@ -145,7 +144,7 @@ After checking for general keyboard support, the next step is to ensure the page
 has proper semantics and there are no obstructions to screen reader navigation.
 If you’re unfamiliar with how semantic markup gets interpreted by assistive
 technology, see the [Introduction to
-Semantics](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/)
+Semantics](/web/fundamentals/accessibility/semantics-builtin/)
 for a refresher.
 
 ### Key points
@@ -166,21 +165,21 @@ for a refresher.
 
 - Ensure that all controls have a label. For custom controls this may require
   the use of `aria-label` or `aria-labelledby`. See [ARIA Labels and
-  Relationships](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships)
+  Relationships](/web/fundamentals/accessibility/semantics-aria/aria-labels-and-relationships)
   for examples.
 
 - Ensure that all custom controls have an appropriate `role` and any required
   ARIA attributes that confer their state. For example, a custom checkbox will
   need a `role=”checkbox”` and `aria-checked=”true|false”` to properly convey
   its state. See the [Introduction to
-  ARIA](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/)
+  ARIA](/web/fundamentals/accessibility/semantics-aria/)
   for a general overview of how ARIA can provide missing semantics for custom
   controls.
 
 - If content _should_ be hidden from a screen reader, for instance, if it’s
   offscreen or just presentational, make sure that content is set to
   `aria-hidden=”true”`. Take a look at the guide on [Hiding
-  content](https://developers.google.com/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content#aria-hidden)
+  content](/web/fundamentals/accessibility/semantics-aria/hiding-and-updating-content#aria-hidden)
   for further explanation.
 
 ### Familiarity with even one screen reader goes a long way
@@ -230,7 +229,7 @@ structure of your page can be used to guide the user’s experience.
   have implicit landmark roles. You can also use the ARIA `role` attribute to
   explicitly define regions on the page, e.g., `<div role=”search”>`. See [the
   guide on headings and
-  landmarks](https://developers.google.com/web/fundamentals/accessibility/semantics-builtin/navigating-content)
+  landmarks](/web/fundamentals/accessibility/semantics-builtin/navigating-content)
   for more examples.
 
 - Avoid `role=”application”` unless you know what you’re doing. The
@@ -259,7 +258,7 @@ suites.
 ### Key points
 
 - Does the page pass all the tests from either the
-  [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd?hl=en-US)
+  [aXe](https://chrome.google.com/webstore/detail/axe/lhdoppojpmngadmnindnejefpokejbdd)
   or
   [WAVE](https://chrome.google.com/webstore/detail/wave-evaluation-tool/jbbplnpkjmmeebjpijfedlgcdilocofh)
   browser extensions? These extensions are a useful addition to any manual test
@@ -298,7 +297,7 @@ content of your site. Remember, good accessibility equals good UX!
 ### Additional Resources
 
 - [Web Accessibility by Google](https://bit.ly/web-a11y)
-- [Accessibility Fundamentals](https://developers.google.com/web/fundamentals/accessibility/)
+- [Accessibility Fundamentals](/web/fundamentals/accessibility/)
 - [A11ycasts](https://www.youtube.com/playlist?list=PLNYkxOF6rcICWx0C9LVWWVqvHlYJyqw7g)
 
 
